@@ -12,9 +12,9 @@ public class negative{
         System.out.println("Fourth number is "+hi4);
         System.out.println("The sum of the 4 numbers is " + ultimatehi);
         if(ultimatehi<0){
-            System.out.println("Negative");
+            System.out.println("The sum is Negative");
         }else{
-            System.out.println("Not Negative");
+            System.out.println("The sum is Not Negative");
         }
     }
 }
