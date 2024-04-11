@@ -5,7 +5,7 @@ public class Game21 {
         int card2 = (int)(10*Math.random())+1;
         int card3 = (int)(10*Math.random())+1;
         int sum;
-        String anothercard;
+        int anothercard;
         sum=card1+card2;
 
         System.out.println("Your first card is "+card1);
@@ -14,10 +14,10 @@ public class Game21 {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Do you want another card? Y/N: ");
-        anothercard = input.next();
+        System.out.print("Do you want another card? 1 = yes 2 = no: ");
+        anothercard = input.nextInt();
 
-        if (anothercard=="Y"||anothercard=="y"){
+        if (anothercard==1){
             sum=card1+card2+card3;
             System.out.println("Your third card is "+card3);
             System.out.println("Your new sum is "+sum);
